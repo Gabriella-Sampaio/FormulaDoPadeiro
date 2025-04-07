@@ -31,8 +31,21 @@ double aguaf = qtFarinha *agua;
 double fermentof = qtFarinha *fermento;
 double salf = qtFarinha *sal;
 
-Console.WriteLine($"Farinha: {qtFarinha}");
-Console.WriteLine($"{aguaf}");
-Console.WriteLine($"{fermentof}");
-Console.WriteLine($"{salf}");
+Console.Clear();
 
+Console.BackgroundColor = ConsoleColor.White;
+Console.ForegroundColor = ConsoleColor.Black;
+Console.WriteLine(@$"
+Quantidade de ingredientes 
+    para fazer {pesoPao}g       
+     de pão italiano       ");
+Console.ResetColor();
+
+Console.WriteLine($@"    
+==========================
+    Farinha:  {(Math.Round(qtFarinha))} g
+    Agua:     {(Math.Round(aguaf))} ml
+    Fermento: {(Math.Round(fermentof))} g
+    Sal:      {(Math.Round(salf))} g
+==========================
+");
