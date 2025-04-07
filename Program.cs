@@ -31,7 +31,8 @@ double aguaf = qtFarinha *agua;
 double fermentof = qtFarinha *fermento;
 double salf = qtFarinha *sal;
 
-Console.WriteLine($"{qtFarinha}");
+Console.WriteLine($"Farinha: {qtFarinha}");
 Console.WriteLine($"{aguaf}");
 Console.WriteLine($"{fermentof}");
 Console.WriteLine($"{salf}");
+
